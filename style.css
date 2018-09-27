@@ -1,22 +1,29 @@
 body {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(15, 11.11vw);
     grid-gap: 25px;
 }
 
 header {
     font-size: 50px;
-    background: orange;
+    background: #EE6C00;
     text-align: center;
-    grid-column: span 5;
+    grid-column: span 9;
     grid-row: span 2; 
     display: flex; 
     justify-content: center;
     align-items: center;
+    color: silver;
+}
+a {
+    text-decoration: none;
+    color: #EE6C00;
 }
 nav {
-
+    grid-row: 3;
 }
+
 
 div {
     

@@ -1,4 +1,23 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 25px;
+}
+
 header {
     font-size: 50px;
     background: orange;
+    text-align: center;
+    grid-column: span 5;
+    grid-row: span 2; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+nav {
+
+}
+
+div {
+    
 }

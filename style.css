@@ -7,15 +7,7 @@ body {
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(15, 11.11vw);
     grid-gap: 20px;
-    background: #EE6C00;
-    background:
-        linear-gradient(115deg, transparent 75%, rgba(255, 255, 255, .5) 75%) 0 0,
-        linear-gradient(245deg, transparent 75%, rgba(255, 255, 255, .5) 75%) 0 0,
-        linear-gradient(115deg, transparent 75%, rgba(255, 255, 255, .5) 75%) 7px -15px,
-        linear-gradient(245deg, transparent 75%, rgba(255, 255, 255, .5) 75%) 7px -15px,
-        #EE6C00;
-    background-size: 15px 30px;
-    font-size: 20px;
+   
 }
 
 header {

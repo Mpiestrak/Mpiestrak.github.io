@@ -6,42 +6,58 @@ body {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(15, 11.11vw);
-    grid-gap: 25px;
+    grid-gap: 20px;
+    background: #EE6C00;
+    background:
+        linear-gradient(115deg, transparent 75%, rgba(255, 255, 255, .5) 75%) 0 0,
+        linear-gradient(245deg, transparent 75%, rgba(255, 255, 255, .5) 75%) 0 0,
+        linear-gradient(115deg, transparent 75%, rgba(255, 255, 255, .5) 75%) 7px -15px,
+        linear-gradient(245deg, transparent 75%, rgba(255, 255, 255, .5) 75%) 7px -15px,
+        #EE6C00;
+    background-size: 15px 30px;
+    font-size: 20px;
 }
 
 header {
     font-size: 50px;
-    background: #EE6C00;
+    font-family: cursive;
     text-align: center;
     grid-column: span 9;
     grid-row: span 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: silver;
+    color: black;
+    /* background: rgba(95, 158, 160, .8); */
 }
 
 a {
     text-decoration: none;
-    color: #EE6C00;
+    color: rgb(70, 70, 70);
 }
 
 nav {
     grid-row: 3;
     grid-column: span 9;
-    background: yellow;
+    /* background: cadetblue; */
+}
+ul {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    font-size: 35px;
 }
 
 #description1 {
     font-size: .75rem;
     margin: 0;
-    background: cadetblue;
+    /* background: cadetblue; */
 }
 
 .article1 {
     grid-row: 4 / span 2;
     grid-column: 1 /span 6;
-    border-bottom: 5px solid #EE6C00;
 }
 
 #picture1 {
@@ -54,38 +70,70 @@ nav {
 aside {
     grid-row: 4 / span 2;
     grid-column: 7 / span 3;
-    background: green;
+    /* background: cadetblue; */
+    border: 5px dashed black;
+
 }
 
 #projects {
     grid-row: 7 / span 2;
     grid-column: 1 / span 9;
-    background: purple;
+    /* background: cadetblue; */
+    border: 5px dashed black;
+
 }
 
 #resume {
-    background: navy;
+    /* background: cadetblue; */
     grid-row: 9 / span 2;
     grid-column: 1 / span 9;
+    border: 5px dashed black;
+
 }
 
 .contact {
-    background: red;
+    /* background: cadetblue; */
     grid-row: 6 / span 1;
     grid-column: 7/span2;
-    border-bottom: 5px dashed salmon;
+    height: 100%;
+    border: 5px dashed black;
+
+}
+
+h2 {
+    font-family: cursive;
+    font-size: 35px;    
+    margin: 0;
+}
+
+.head {
+    font-size: 35px;
+    font-family: cursive;
+}
+#me {
+    max-width: 25%;
+
+}
+
+.links {
+    height: 100%;
+    grid-row: 6 / span 1;
+    font-size: 25px;
 }
 
 footer {
-    background: #EE6C00;
-    grid-row: 12 / span 1;
+    /* background: cadetblue; */
+    grid-row: 11 / span 1;
     grid-column: 1 / span 9;
+    font-family: cursive;
+    border: 5px dashed black;
+    display: inline-flex;
 }
 
 .text1 {
-    border-bottom: 5px dashed salmon;
+    border-bottom: 5px dashed black;
     height: 100%;
     grid-row: 6 / span 1;
     grid-column: 1 / span 6;
-    
+    margin: 0;
 }
